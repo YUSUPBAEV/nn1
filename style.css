@@ -1,0 +1,192 @@
+/**
+ * Typography & Text styles
+ */
+
+/* Set the base font size for REM calculations */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em; /* for compatibility */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f8f8f2; /* Light text color */
+  background-color: #282a36; /* Dark background color */
+}
+
+/**
+ * Overall layout styles
+ */
+html, body {
+  height: 100%; /* Ensure the body takes full height */
+  margin: 0; /* Remove default margin */
+}
+
+/* Main container styling */
+#container {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  min-height: 100vh; /* Full height of the viewport */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px; /* Padding around the main container */
+}
+
+/**
+ * Links
+ */
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #66d9ef; /* Light blue link color */
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+small {
+  font-size: 75%;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  color: #f8f8f2; /* Light heading color */
+}
+
+h1 { font-size: 3.6rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.4rem; }
+
+/**
+ * Paragraphs
+ */
+p {
+  margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
+}
+
+/**
+ * Project Cards
+ */
+.project-card {
+  background: #44475a; /* Dark card background */
+  border: 1px solid #6272a4; /* Light border for cards */
+  border-radius: 6px; /* Rounded corners */
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Soft shadow */
+}
+
+.project-card h3 {
+  margin-top: 0; /* No top margin for titles */
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff; /* White text for buttons */
+  background-color: #50fa7b; /* Green button */
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/**
+ * Header, main content, and footer styles */
+header, main, footer { 
+  background: rgba(0, 0, 0, 0.8); /* Dark background for sections */
+  padding: 25px;
+  color: #f8f8f2; 
+  border-radius: 8px; /* Rounded corners for sections */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+main {
+  flex: 1; /* This will allow the main content to grow and take up available space */
+}
+
+/* Footer styles */
+footer {
+  text-align: center; /* Center align footer content */
+  font-size: 0.9rem; /* Smaller font for footer */
+  padding: 15px 0;
+  background-color: #44475a; /* Dark footer background */
+  /* Path to your logo image */
+  background-size: contain; /* Ensure the image is contained within the footer */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the image */
+  margin-top: auto; /* This ensures the footer is pushed to the bottom */
+}
+
+/* Logo Styles */
+.logo {
+  width: 150px; /* Set desired width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Menu Links */
+ul.main-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+ul.main-menu li {
+  margin-right: 20px; /* Space between menu items */
+}
+
+ul.main-menu li a {
+  font-size: 1.6rem;
+  color: #66d9ef; /* Light blue link color */
+}
+
+ul.main-menu li a:hover,
+ul.main-menu li a.active {
+  color: #f8f8f2; /* Light color on hover */
+}
+
+/* Utility classes */
+.hide {
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  body {
+    font-size: 1.4em; /* Slightly smaller font on mobile */
+  }
+
+  ul.main-menu {
+    flex-direction: column; /* Stack menu items vertically on small screens */
+  }
+
+  ul.main-menu li {
+    margin-bottom: 10px; /* Space between stacked menu items */
+  }
+}
